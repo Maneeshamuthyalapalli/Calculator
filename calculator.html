@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@600&family=Noto+Sans&family=Source+Sans+Pro:ital,wght@1,600&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <form name="form">
+                <div class="input">
+                    <input type="text" name="display" readonly id="input-tab" maxlength="120">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value=''" class="operator">
+                    <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="." onclick="display.value+='.'" class="operator">
+                    <input type="button" value="/" onclick="display.value+='/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value+='7'">
+                    <input type="button" value="8" onclick="display.value+='8'">
+                    <input type="button" value="9" onclick="display.value+='9'">
+                    <input type="button" value="*" onclick="display.value+='*'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value+='4'">
+                    <input type="button" value="5" onclick="display.value+='5'">
+                    <input type="button" value="6" onclick="display.value+='6'">
+                    <input type="button" value="-" onclick="display.value+='-'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value+='1'">
+                    <input type="button" value="2" onclick="display.value+='2'">
+                    <input type="button" value="3" onclick="display.value+='3'">
+                    <input type="button" value="+" onclick="display.value+='+'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value+='00'">
+                    <input type="button" value="0" onclick="display.value+='0'">
+                    <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal operator">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="credits">
+                <p>&copy;copyright | <a href="https://www.linkedin.com/in/manisha-m-4b07b9254/" target="_blank">Maneesha</a> | 2024</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
